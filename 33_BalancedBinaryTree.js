@@ -22,7 +22,7 @@ class Solution {
             let right=checkHeight(node.right)
             if(right===-1)return -1
 
-            if(Math.abs(left-right>1))return -1
+            if(Math.abs(left-right)>1)return -1
             return Math.max(left,right)+1
         }
         return checkHeight(root)!==-1
